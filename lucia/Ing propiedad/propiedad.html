@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- Estilos Registro -->
+    <link rel="stylesheet" href="css/estilos-propiedad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Propiedad</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="contenedor">
+                <!-- Columna 1 -->
+                <div class="col-1 col">
+                    <div class="div-imagen">
+                        <img class="img-col" src="img/tasar-propiedad.png" alt="Tasación de propiedades online en Argentina">
+                    </div>
+                    <h1 class="title">Conoce el valor de tu propiedad</h1>
+                    <p class="parrafo">Ingresa los datos te tu vivienda y obten una predicción al instante del valor de la propiedad.</p>
+                </div>
+                <!-- Columna 2 -->
+                <div class="col-2 col">
+                    <h2 class="title-h2">Tasar Propiedad</h2>
+                    <p class="p-form">Ingresa los datos de la propiedad para hacer la tasación.</p>
+                    <form class="form-style">
+                        <ul>
+                        <li>
+                            <input type="text" name="calle" class="field-style field-split align-left" placeholder="Calle" />
+                            <input type="text" name="numero" min="1" pattern="^[0-9]+" class="field-style field-split align-right" placeholder="Número" />
+                        </li>
+                        <li>
+                            <input type="text" class="field-style field-split align-left" placeholder="Provincia" />
+                            <input type="text" name="localidad" class="field-style field-split align-right" placeholder="Localidad" />
+                        </li>
+                        <li>
+                            <input type="number" min="1" pattern="^[0-9]+" class="field-style field-split align-left" placeholder="Superficie M2" />
+                            <input type="text" name="antiguedad" class="field-style field-split align-right" placeholder="Antiguedad" />
+                        </li>
+                        <li>
+                            <input type="number" name="banos" min="1" pattern="^[0-9]+" class="field-style field-split align-left" placeholder="Baños" />
+                            <input type="number" name="habitaciones" min="1" pattern="^[0-9]+" class="field-style field-split align-right" placeholder="Habitaciones" />
+                        </li>
+                        <li>
+                           <div class="div-select">
+                            <input type="number" class="field-style field-split align-left" placeholder="Ambientes" />
+                            <select class="select">
+                                <option selected disabled>Estado Propiedad</option>
+                                <option value="bajo">Bajo</option>
+                                <option value="medio">Medio</option>
+                                <option value="alto">Alto</option>
+                            </select>         
+                            </div>
+                        </li>
+                        <li class="li-check">
+                            <input type="checkbox" class="input-chek" id="check-cochera" name="cochera" value="1">
+                            <label class="label">¿Tiene cochera?</label><br>
+                        </li>
+                        <li>
+                        <input class="boton-form" type="submit" value="Tasar" required>
+                        </li>
+                        </ul>
+                        </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
