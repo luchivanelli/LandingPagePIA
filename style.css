@@ -18,14 +18,23 @@
 @media screen and (min-width: 0) {  /*Mobile*/
     .header {
         position: fixed;
-        height: 110px;
+        height: 100px;
         width: 100%;
-        background-color: var(--color-five);
+        background-color: var(--color-seven);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 10px;
         z-index: 10;
+    }
+
+    .icon {
+        width: 120px;
+        padding: 0 5px;
+    }
+
+    .icon img {
+        width: 100%;
     }
 
     .nav {
@@ -47,21 +56,20 @@
 
     .nav-a a {
         text-decoration: none;
-        color: var(--color-seven);
+        color: var(--color-five);
         padding: 0 5px;
         text-align: end;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .nav-buttons {
         display: flex;
         flex-direction: column;
-        
     }
 
     .nav-button {
-        width: 100px;
-        font-size: 15px;
+        width: 80px;
+        font-size: 14px;
         font-weight: 500;
         border-radius: 10px;
         padding: 6px;
@@ -98,12 +106,8 @@
         color: var(--color-one);
     }
 
-    .main {
-        /* padding-top: 110px; */
-    }
-
     #home {
-        padding-top: 110px;
+        padding-top: 100px;
         background-color: var(--color-two);
     }
 
@@ -136,7 +140,7 @@
     #nosotros {
         width: 80%;
         margin: 0 auto;
-        padding-top: 110px;
+        padding-top: 100px;
         padding-bottom: 40px;
     }
 
@@ -145,7 +149,7 @@
     }
 
     #como-funciona {
-        padding-top: 110px;
+        padding-top: 100px;
         background-color: var(--color-five);
     }
 
@@ -160,7 +164,7 @@
         color: var(--color-one);
         font-weight: 600;
         letter-spacing: 1px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .como-funciona-description h3 {
@@ -175,9 +179,9 @@
         font-size: 16px;
     }
 
-    .como-funciona-caracteristicas {
+    .como-funciona-characteristics {
         background-color: var(--color-two);
-        margin: 110px 0;
+        margin: 110px 0 0;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;
@@ -185,15 +189,15 @@
         align-items: center;
     }
 
-    .caracteristica {
+    .characteristic {
         width: 80%;
         margin: 30px 0;
     }
 
-    .caracteristica-div {
+    .characteristic-div {
         margin: 20px 0;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background-color: var(--color-two);
         transform: rotate(30deg);
         border-radius: 15px;
@@ -205,11 +209,11 @@
         cursor: pointer;
     }
 
-    .caracteristica-div div {
-        width: 50px;
-        height: 50px;
+    .characteristic-div div {
+        width: 38px;
+        height: 38px;
         background-color: var(--color-one);
-        border-radius: 15px;
+        border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -217,27 +221,168 @@
         transform: rotate(-30deg);
     }
 
-    .caracteristica-div:hover {
+    .characteristic-div:hover {
         box-shadow: 0 0 10px var(--color-one);
     }
 
-    .caracteristica-div div i {
-        font-size: 22px;
+    .characteristic-div div i {
+        font-size: 18px;
         color: var(--color-two);
     }
 
-    .caracteristica h5 {
+    .characteristic h5 {
         color: var(--color-seven);
         font-size: 20px;
         margin: 10px 0;
     }
 
-    .caracteristica p {
+    .characteristic p {
         color: var(--color-three);
     }
 
-    .caracteristica p b {
+    .characteristic p b {
         color: var(--color-one);
+    }
+
+    #contacto {
+        padding-top: 100px;
+        background-color: var(--color-five);
+    }
+
+    .contacto-title {
+        width: 80%;
+        margin: auto;
+    }
+
+    .contacto-title span {
+        color: var(--color-one);
+        margin-left: 5px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .contacto-title h3 {
+        color: var(--color-seven);
+        font-size: 26px;
+    }
+
+    .contacto-info {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+        margin: 40px 0 100px;
+    }
+
+    .contacto-tel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contacto-h6 {
+        font-size: 15px;
+        color: var(--color-one);
+        margin-bottom: 10px;
+    }
+
+    .contacto-p {
+        color: var(--color-three);
+        font-size: 15px;
+    }
+
+    .contacto-tel b {
+        color: var(--color-seven);
+        font-size: 15px;
+    }
+
+    .contacto-email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contacto-form {
+        background-color: var(--color-two);
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form {
+        background-color: var(--color-five);
+        padding: 40px;
+        border-radius: 20px;
+        /*box-shadow: 0 0 3px var(--color-seven);*/
+    }
+
+    .form h3 {
+        color: var(--color-one);
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+    }
+
+    .form-div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .form-label {
+        font-size: 14px;
+        margin-left: 5px;
+        margin-bottom: 2px;
+        color: var(--color-seven);
+    }
+
+    .form-label b {
+        color: var(--color-one);
+    }
+
+    .form-input {
+        color: var(--color-three);
+        font-size: 14px;
+        border: none;
+        background-color: var(--color-five);
+        border-bottom: 2px solid #45536083;
+        padding: 5px 10px;
+        caret-color: var(--color-one);
+    }
+
+    .form-input:focus {
+        outline: none;
+        border-color: var(--color-one);
+    }
+
+    .input-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-button input {
+        margin-top: 15px;
+        padding: 8px 12px;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        background-color: var(--color-one);
+        color: var(--color-five);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.6s;
+    }
+
+    .input-button input:hover {
+        border-color: var(--color-one);
+        background-color: var(--color-five);
+        color: var(--color-one);
+        transition: all 0.3s;
     }
 }
 
