@@ -62,9 +62,14 @@
         font-size: 14px;
     }
 
+    .nav-a a:hover {
+        color: var(--color-six);
+    }
+
     .nav-buttons {
         display: flex;
         flex-direction: column;
+        padding: 0 5px;
     }
 
     .nav-button {
@@ -114,7 +119,7 @@
     }
 
     #home {
-        padding-top: 100px;
+        padding-top: 110px;
         background-color: var(--color-two);
     }
 
@@ -147,7 +152,7 @@
     #nosotros {
         width: 80%;
         margin: 0 auto;
-        padding-top: 100px;
+        padding-top: 110px;
         padding-bottom: 40px;
     }
 
@@ -156,7 +161,7 @@
     }
 
     #como-funciona {
-        padding-top: 100px;
+        padding-top: 110px;
         background-color: var(--color-five);
     }
 
@@ -181,7 +186,6 @@
 
     .como-funciona-description p {
         margin: 20px 0 0;
-        line-height: 30px;
         color: var(--color-three);
         font-size: 16px;
     }
@@ -252,7 +256,7 @@
     }
 
     #contacto {
-        padding-top: 100px;
+        padding-top: 110px;
         background-color: var(--color-five);
     }
 
@@ -282,11 +286,22 @@
         margin: 40px 0 100px;
     }
 
+    .contacto-icon-2 {
+        font-size: 22px;
+        color: var(--color-seven);
+        display: none;
+    }
+
+    .contacto-icon-1 {
+        padding: 0 5px;
+    }
+
     .contacto-tel {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 5px;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .contacto-h6 {
@@ -309,6 +324,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         gap: 20px;
     }
 
@@ -394,7 +410,133 @@
 }
 
 @media screen and (min-width: 768px) {  /*Tablet*/ 
+    .nav-a {
+        flex-direction: row;
+        border: none;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .nav-buttons {
+        padding-left: 10px;
+    }
+
+    .home-title {
+        width: 60%;
+        margin: auto;
+    }
+
+    .home-description h4 {
+        width: 60%;
+    }
+
+    #nosotros {
+        width: 50%;
+    }
+
+    .como-funciona-description {
+        width: 60%;
+        margin: auto;
+    }
+
+    .characteristic {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .contacto-title {
+        width: 60%;
+    }
+
+    .contacto-info {
+        gap: 60px;
+    }
+
+    .contacto-icon-2 {
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .contacto-icon-1 {
+        display: none;
+    }
+
+    .contacto-tel {
+        flex-direction: row;
+    }
+
+    .contacto-email {
+        flex-direction: row;
+    }
+
+    .form {
+        padding: 30px 60px;
+        width: 60%;
+    }
 }
 
 @media screen and (min-width: 1024px) {  /*Desktop*/
+    .header {
+        justify-content: space-evenly;
+    }
+    
+    .nav-buttons {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .home-title {
+        width: 50%;
+    }
+
+    .home-description h4 {
+        width: 50%;
+    }
+
+    #nosotros {
+        width: 40%;
+    }
+
+    .como-funciona-description {
+        width: 60%;
+        padding: 30px 60px;
+    }
+
+    .como-funciona-characteristics {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 30px 120px;
+    }
+
+    #contacto {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        padding-top: 90px;
+    }
+
+    .contacto-title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .contacto-info {
+        gap: 50px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 100%;
+        align-items: center;
+    }
+
+    .contacto-form {
+        background-color: var(--color-five);
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        width: 100%;
+        padding: 0 80px 20px 0;
+    }
+
+    .form {
+        width: 100%;
+    }
 }
