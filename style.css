@@ -29,7 +29,7 @@
     }
 
     .icon {
-        width: 120px;
+        width: 100px;
         padding: 0 5px;
     }
 
@@ -410,6 +410,10 @@
 }
 
 @media screen and (min-width: 768px) {  /*Tablet*/ 
+    .icon {
+        width: 120px;
+    }
+
     .nav-a {
         flex-direction: row;
         border: none;
