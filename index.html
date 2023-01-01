@@ -19,15 +19,14 @@
     <title>PIA</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="icon">
-            <img src="./img/pia_logo-modified.png" alt="PIA icon">
+            <img src="./img/icon.png" alt="PIA icon">
         </div>
         <nav class="nav">
             <div class="nav-a">
                 <a href="#home">Home</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#como-funciona">Como funciona</a>
+                <a href="#como-funciona">Características</a>
                 <a href="#contacto">Contacto</a>
             </div>
             <div class="nav-buttons">
@@ -40,11 +39,11 @@
         <section id="home">
             <h2 class="home-title">Obtén el mejor precio para tu propiedad al instante</h2>
             <div class="home-description">
-                <img src="./img/img-2.png" alt="Img home">
+                <div><img src="./img/inteligencia-artificial.png" alt="Img home"></div>
                 <h4>PIA es una <b>inteligencia artificial</b> que ayuda a tazar propiedades de una forma sencilla. Con la seguridad de encontrar un equilibrio de rentabilidad y tiempo en el mercado</h4>
             </div>
-            <div id="nosotros">
-                <iframe class="nosotros-video" width="560" height="315" src="https://www.youtube.com/embed/CFkm4BRNqxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="div-video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CFkm4BRNqxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <section id="como-funciona">
@@ -105,9 +104,9 @@
             </div>
             <div class="contacto-form">
                 <form class="form">
-                    <h3>Send us a Message</h3>
+                    <h3>Envíanos un mensaje</h3>
                     <div class="form-div">
-                        <label for="name" class="form-label">Full Name <b>*</b></label>
+                        <label for="name" class="form-label">Nombre completo <b>*</b></label>
                         <input class="form-input" type="text" name="name" id="name" placeholder="Adam Gelius">
                     </div>
                     <div class="form-div">
@@ -115,19 +114,22 @@
                         <input class="form-input" type="email" name="email" id="email" placeholder="example@yourmail.com">
                     </div>
                     <div class="form-div">
-                        <label for="tel" class="form-label">Phone <b>*</b></label>
+                        <label for="tel" class="form-label">Teléfono <b>*</b></label>
                         <input class="form-input" type="text" name="tel" id="tel" placeholder="+54 341 5477903">
                     </div>
                     <div class="form-div">
-                        <label for="message" class="form-label">Message <b>*</b></label>
+                        <label for="message" class="form-label">Mensaje <b>*</b></label>
                         <input class="form-input" type="text" name="message" id="message" placeholder="Type your message here">
                     </div>
                     <div class="input-button">
-                        <input type="submit" value="Send Message">
+                        <input type="submit" value="Enviar mensaje">
                     </div>
                 </form>
             </div>
         </section>
+        <div class="fixed-button">
+            <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
     </main>
 </body>
 </html>

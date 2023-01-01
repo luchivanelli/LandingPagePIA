@@ -6,6 +6,9 @@
     --color-five: #f7f8fc;
     --color-six: #8e8e8e;
     --color-seven: #292731;
+    --color-eight: #877cd9;
+    --color-nine: #877cd94f;
+    --white: #ffffff;
 }
 
 * {
@@ -17,24 +20,26 @@
 
 @media screen and (min-width: 0) {  /*Mobile*/
     .header {
-        position: fixed;
         height: 100px;
         width: 100%;
-        background-color: var(--color-seven);
+        background-color: var(--white);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 10px;
-        z-index: 10;
+        box-shadow: 0 1px 5px var(--color-nine);
     }
 
     .icon {
         width: 100px;
-        padding: 0 5px;
     }
 
     .icon img {
-        width: 100%;
+        width: 80%;
+        object-fit: cover;
+        object-position: center;
+        min-width: 100px;
+        padding: 0 5px;
     }
 
     .nav {
@@ -51,12 +56,12 @@
         justify-content: center;
         align-items: flex-end;
         padding-right: 4px;
-        border-right: 2px solid #8e8e8e61;
+        border-right: 2px solid var(--color-nine);
     }
 
     .nav-a a {
         text-decoration: none;
-        color: var(--color-five);
+        color: var(--color-three);
         padding: 0 5px;
         text-align: end;
         font-size: 14px;
@@ -86,14 +91,12 @@
     }
 
     .button-1 {
-        /*background-color: var(--color-two);*/
-        /*color: var(--color-one)*/
         background-color: var(--color-five);
         color: var(--color-three);
     }
 
     .button-2 {
-        background-color: var(--color-one);
+        background-color: var(--color-eight);
         color: var(--color-five);
     }
 
@@ -101,26 +104,19 @@
         transition: all 0.3s;
     }
 
-    /*.button-1:hover {
-        border-color: var(--color-two);
-        background-color: var(--color-five);
-        color: var(--color-one);
-    }*/
-
     .button-1:hover {
-        border-color: var(--color-three);
-        color: var(--color-seven);
+        border-color: var(--color-six);
+        color: var(--color-three);
     }
 
     .button-2:hover {
-        border-color: var(--color-one);
+        border-color: var(--color-eight);
         background-color: var(--color-five);
-        color: var(--color-one);
+        color: var(--color-eight);
     }
 
     #home {
-        padding-top: 110px;
-        background-color: var(--color-two);
+        background-color: var(--color-nine);
     }
 
     .home-title {
@@ -139,41 +135,51 @@
         padding: 0 20px;
     }
 
+    .home-description div {
+        width: 150px;
+    }
+
+    .home-description div img {
+        padding: 30px 0 0;
+        width: 100%;
+    }
+
     .home-description h4 {
         color: var(--color-seven);
         text-align: center;
         padding: 20px 0 0;
+        font-weight: 300;
     }
 
     .home-description h4 b {
-        color: var(--color-one);
+        color: var(--color-eight);
     }
 
-    #nosotros {
-        width: 80%;
+    .div-video {
+        width: 70%;
         margin: 0 auto;
-        padding-top: 110px;
-        padding-bottom: 40px;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
     }
 
-    .nosotros-video {
+    .video {
         width: 100%;
+        height: 200px;
     }
 
     #como-funciona {
-        padding-top: 110px;
         background-color: var(--color-five);
     }
 
     .como-funciona-description {
-        margin: 0 40px;
-        padding: 30px;
-        background-color: var(--color-two);
+        margin: 0 60px;
+        padding: 40px 0 0;
         border-radius: 10px;
     }
 
     .como-funciona-description span {
-        color: var(--color-one);
+        color: var(--color-eight);
         font-weight: 600;
         letter-spacing: 1px;
         margin-left: 5px;
@@ -181,19 +187,19 @@
 
     .como-funciona-description h3 {
         color: var(--color-seven);
-        font-size: 26px;
+        font-size: 24px;
+        font-weight: 600;
     }
 
     .como-funciona-description p {
-        margin: 20px 0 0;
+        margin: 10px 0 0;
         color: var(--color-three);
         font-size: 16px;
+        font-weight: 400;
     }
 
     .como-funciona-characteristics {
-        background-color: var(--color-two);
-        margin: 110px 0 0;
-        padding: 40px 20px;
+        padding: 20px 20px 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -202,20 +208,21 @@
 
     .characteristic {
         width: 80%;
-        margin: 30px 0;
+        margin: 10px 0;
+        padding-left: 5px;
     }
 
     .characteristic-div {
         margin: 20px 0;
         width: 40px;
         height: 40px;
-        background-color: var(--color-two);
+        background-color: var(--color-five);
         transform: rotate(30deg);
         border-radius: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 5px var(--color-one);
+        box-shadow: 0 0 6px var(--color-eight);
         transition: box-shadow 0.5s;
         cursor: pointer;
     }
@@ -223,7 +230,7 @@
     .characteristic-div div {
         width: 38px;
         height: 38px;
-        background-color: var(--color-one);
+        background-color: var(--color-eight);
         border-radius: 10px;
         display: flex;
         justify-content: center;
@@ -233,7 +240,7 @@
     }
 
     .characteristic-div:hover {
-        box-shadow: 0 0 10px var(--color-one);
+        box-shadow: 0 0 12px var(--color-eight);
     }
 
     .characteristic-div div i {
@@ -244,20 +251,22 @@
     .characteristic h5 {
         color: var(--color-seven);
         font-size: 20px;
+        font-weight: 600;
         margin: 10px 0;
     }
 
     .characteristic p {
         color: var(--color-three);
+        font-weight: 300;
     }
 
     .characteristic p b {
-        color: var(--color-one);
+        color: var(--color-eight);
     }
 
     #contacto {
-        padding-top: 110px;
-        background-color: var(--color-five);
+        background-color: var(--color-nine);
+        padding: 40px 0 0;
     }
 
     .contacto-title {
@@ -266,7 +275,7 @@
     }
 
     .contacto-title span {
-        color: var(--color-one);
+        color: var(--color-eight);
         margin-left: 5px;
         letter-spacing: 1px;
         font-weight: 600;
@@ -275,7 +284,8 @@
 
     .contacto-title h3 {
         color: var(--color-seven);
-        font-size: 26px;
+        font-size: 24px;
+        font-weight: 600;
     }
 
     .contacto-info {
@@ -283,7 +293,7 @@
         justify-content: center;
         align-items: flex-start;
         gap: 30px;
-        margin: 40px 0 100px;
+        margin: 40px 0;
     }
 
     .contacto-icon-2 {
@@ -306,8 +316,9 @@
 
     .contacto-h6 {
         font-size: 15px;
-        color: var(--color-one);
+        color: var(--color-eight);
         margin-bottom: 10px;
+        font-weight: 500;
     }
 
     .contacto-p {
@@ -329,8 +340,7 @@
     }
 
     .contacto-form {
-        background-color: var(--color-two);
-        padding: 40px;
+        padding: 10px 0 40px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -341,11 +351,12 @@
         background-color: var(--color-five);
         padding: 30px;
         border-radius: 20px;
-        /*box-shadow: 0 0 3px var(--color-seven);*/
+        border: 3px solid var(--color-eight);
     }
 
     .form h3 {
-        color: var(--color-one);
+        color: var(--color-eight);
+        font-weight: 500;
         font-size: 20px;
         text-align: center;
         letter-spacing: 0.5px;
@@ -366,7 +377,7 @@
     }
 
     .form-label b {
-        color: var(--color-one);
+        color: var(--color-eight);
     }
 
     .form-input {
@@ -376,12 +387,12 @@
         background-color: var(--color-five);
         border-bottom: 2px solid #45536083;
         padding: 5px;
-        caret-color: var(--color-one);
+        caret-color: var(--color-eight);
     }
 
     .form-input:focus {
         outline: none;
-        border-color: var(--color-one);
+        border-color: var(--color-eight);
     }
 
     .input-button {
@@ -394,7 +405,7 @@
         padding: 8px 12px;
         border: 2px solid transparent;
         border-radius: 6px;
-        background-color: var(--color-one);
+        background-color: var(--color-eight);
         color: var(--color-five);
         font-weight: 600;
         cursor: pointer;
@@ -402,16 +413,41 @@
     }
 
     .input-button input:hover {
-        border-color: var(--color-one);
+        border-color: var(--color-eight);
         background-color: var(--color-five);
-        color: var(--color-one);
+        color: var(--color-eight);
         transition: all 0.3s;
+    }
+
+    .fixed-button a {
+        width: 34px;
+        height: 34px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 0 10px 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-nine);
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .fixed-button i {
+        font-size: 20px;
+        color: var(--color-seven);
     }
 }
 
 @media screen and (min-width: 768px) {  /*Tablet*/ 
     .icon {
-        width: 120px;
+        width: 110px;
+    }
+
+    .icon img{
+        width: 100%;
     }
 
     .nav-a {
@@ -428,24 +464,59 @@
     .home-title {
         width: 60%;
         margin: auto;
+        font-size: 28px;
     }
 
     .home-description h4 {
         width: 60%;
     }
 
-    #nosotros {
-        width: 50%;
+    .div-video {
+        width: 70%;
+        height: 300px;
+        padding: 60px;
+    }
+
+    .video {
+        width: 60%;
+        height: 100%;
     }
 
     .como-funciona-description {
         width: 60%;
         margin: auto;
+        padding-top: 60px;
+    }
+
+    .como-funciona-characteristics {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 60px;
     }
 
     .characteristic {
-        width: 70%;
-        margin: 30px auto;
+        width: 40%;
+        margin: 20px;
+    }
+
+    .characteristic-div {
+        width: 46px;
+        height: 46px;
+    }
+
+    .characteristic-div div {
+        width: 44px;
+        height: 44px;
+    }
+
+    .characteristic-div div i {
+        font-size: 20px;
+    }
+
+    #contacto {
+        padding-top: 60px;
     }
 
     .contacto-title {
@@ -475,7 +546,17 @@
 
     .form {
         padding: 30px 60px;
-        width: 60%;
+        width: 40%;
+    }
+
+    .fixed-button a {
+        width: 40px;
+        height: 40px;
+        margin: 0 20px 30px;
+    }
+
+    .fixed-button a i {
+        font-size: 24px;
     }
 }
 
@@ -490,33 +571,54 @@
     }
 
     .home-title {
+        font-size: 30px;
         width: 50%;
+    }
+
+    .home-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 40px 0 0;
+    }
+
+    .home-description div {
+        width: 180px;
+    }
+
+    .home-description div img {
+        padding: 0;
+        width: 100%;
     }
 
     .home-description h4 {
-        width: 50%;
+        width: 40%;
+        text-align: start;
     }
 
-    #nosotros {
-        width: 40%;
+    .div-video {
+        width: 70%;
+        height: 380px;
     }
 
     .como-funciona-description {
         width: 60%;
-        padding: 30px 60px;
+        padding: 60px 30px 0;
     }
 
     .como-funciona-characteristics {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 40px;
-        padding: 30px 120px;
+        padding: 30px;
+    }
+
+    .characteristic {
+        width: 20%;
     }
 
     #contacto {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
-        padding-top: 90px;
     }
 
     .contacto-title {
@@ -533,11 +635,10 @@
     }
 
     .contacto-form {
-        background-color: var(--color-five);
         grid-column: 2 / 3;
         grid-row: 1 / 3;
-        width: 100%;
-        padding: 0 80px 20px 0;
+        width: 90%;
+        padding: 0 80px 60px 0;
     }
 
     .form {
