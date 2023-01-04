@@ -8,6 +8,7 @@
     --color-seven: #292731;
     --color-eight: #877cd9;
     --color-nine: #877cd94f;
+    --color-ten: #c9c2ff4f;
     --white: #ffffff;
 }
 
@@ -116,11 +117,12 @@
     }
 
     #home {
-        background-color: var(--color-nine);
+        background-color: var(--color-ten);
     }
 
     .home-title {
         font-size: 26px;
+        font-weight: 600;
         padding: 40px 20px 10px;
         text-align: center;
         letter-spacing: 1px;
@@ -265,7 +267,7 @@
     }
 
     #contacto {
-        background-color: var(--color-nine);
+        background-color: var(--color-ten);
         padding: 40px 0 0;
     }
 
